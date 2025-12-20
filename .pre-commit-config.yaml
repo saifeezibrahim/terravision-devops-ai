@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: Run black
+        entry: poetry run black .
+        language: system
+        pass_filenames: false
+      - id: pytest
+        name: Run pytest
+        entry: poetry run pytest -m "not slow"
+        language: system
+        pass_filenames: false
+        always_run: true
