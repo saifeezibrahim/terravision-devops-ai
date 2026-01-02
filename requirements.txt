@@ -1,0 +1,11 @@
+click
+GitPython
+graphviz
+PyYAML
+requests
+tqdm
+python-hcl2
+ipaddr
+debugpy
+ollama
+tomli
