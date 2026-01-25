@@ -1,0 +1,49 @@
+{
+    "google_compute_backend_service.web": [
+        "google_compute_health_check.http",
+        "REDACTED.web_igm~1",
+        "google_compute_url_map.web"
+    ],
+    "REDACTED.web": [
+        "REDACTED.web"
+    ],
+    "google_compute_health_check.http": [],
+    "google_compute_instance.web~1": [],
+    "google_compute_instance.web~2": [],
+    "REDACTED.web_igm~1": [
+        "google_compute_instance.web~1",
+        "google_compute_instance.web~2",
+        "google_logging_project_sink.logging"
+    ],
+    "REDACTED.web": [
+        "REDACTED.web_igm~1",
+        "google_logging_project_sink.logging"
+    ],
+    "google_compute_network.vpc": [
+        "tv_gcp_region.us_central1"
+    ],
+    "google_compute_subnetwork.subnet": [
+        "tv_gcp_zone.us_central1_a"
+    ],
+    "REDACTED.web": [
+        "google_compute_url_map.web"
+    ],
+    "google_compute_url_map.web": [],
+    "google_logging_project_sink.logging": [],
+    "tv_gcp_load_balancer.http_load_balancer": [
+        "google_compute_backend_service.web",
+        "REDACTED.web",
+        "google_compute_health_check.http",
+        "REDACTED.web",
+        "google_compute_url_map.web"
+    ],
+    "tv_gcp_region.us_central1": [
+        "REDACTED.web",
+        "google_compute_subnetwork.subnet"
+    ],
+    "tv_gcp_zone.us_central1_a": [
+        "google_compute_instance.web~1",
+        "google_compute_instance.web~2",
+        "REDACTED.web_igm~1"
+    ]
+}

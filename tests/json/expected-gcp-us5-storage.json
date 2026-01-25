@@ -1,0 +1,23 @@
+{
+    "google_compute_instance.app_server": [],
+    "google_logging_project_sink.logging": [
+        "google_compute_instance.app_server"
+    ],
+    "google_service_account.app_sa": [
+        "google_compute_instance.app_server",
+        "REDACTED.backup_admin",
+        "REDACTED.data_viewer"
+    ],
+    "google_storage_bucket.backup": [
+        "REDACTED.backup_admin"
+    ],
+    "google_storage_bucket.data": [
+        "REDACTED.data_viewer"
+    ],
+    "google_storage_bucket.static": [],
+    "REDACTED.backup_admin": [],
+    "REDACTED.data_viewer": [],
+    "tv_gcp_zone.us_central1_a": [
+        "google_compute_instance.app_server"
+    ]
+}
